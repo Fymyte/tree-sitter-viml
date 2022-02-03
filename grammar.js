@@ -1085,7 +1085,7 @@ module.exports = grammar({
     env_variable: ($) => seq('$', $.identifier),
 
     // :h registers
-    register: ($) => /@["0-9a-zA-Z:.%#=*+_/-]/,
+    register: ($) => /@["0-9a-zA-Z:.%#=*+_/-@]/,
 
     option: ($) => seq('&', optional($.scope), $.option_name),
 
